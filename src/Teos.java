@@ -96,10 +96,10 @@ public abstract class Teos implements Comparable<Teos>{
 
     @Override
     public int compareTo(Teos teos) {
-        if (teoseKirjeldus.compareTo(teos.getTeoseKirjeldus()) == -1){
+        if (teoseKirjeldus.compareTo(teos.getTeoseKirjeldus()) < -1){
             return -1;
         }
-        if (teoseKirjeldus.compareTo(teos.getTeoseKirjeldus()) == 1){
+        if (teoseKirjeldus.compareTo(teos.getTeoseKirjeldus()) > 1){
             return 1;
         }
         return 0;
